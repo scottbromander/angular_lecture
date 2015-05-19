@@ -49,7 +49,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: "client",
                 src: [
-                    "views/sample.html"
+                    "views/userinfo.html"
                 ],
                 "dest": "public/"
             }
