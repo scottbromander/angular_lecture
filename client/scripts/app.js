@@ -6,18 +6,22 @@ myApp.config(['$routeProvider', function($routeProvider){
     $routeProvider.
         when('/home', {
             templateUrl: "/views/routes/home.html",
-            controller: 'RegistrationController'
+             controller: 'RegistrationController'
         }).
         when('/code', {
-            templateUrl: "/views/routes/code.html"
+            templateUrl: "/views/routes/code.html",
+            controller: 'RegistrationController'
         }).
         when('/projects', {
-            templateUrl: "/views/routes/projects.html"
+            templateUrl: "/views/routes/projects.html",
+            controller: 'RegistrationController'
         }).
         otherwise({
             redirectTo: '/home'
         });
 }]);
+
+
 
 
 
