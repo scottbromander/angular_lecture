@@ -1,9 +1,12 @@
-var myApp = angular.module('myApp',['ngRoute']);
+var myApp = angular.module('myApp',['ngRoute', 'appControllers']);
+
+var appControllers = angular.module('appControllers',[]);
 
 myApp.config(['$routeProvider', function($routeProvider){
     $routeProvider.
         when('/home', {
-           templateUrl: "/views/routes/home.html"
+            templateUrl: "/views/routes/home.html",
+            controller: 'RegistrationController'
         }).
         when('/code', {
             templateUrl: "/views/routes/code.html"
@@ -15,6 +18,8 @@ myApp.config(['$routeProvider', function($routeProvider){
             redirectTo: '/home'
         });
 }]);
+
+
 
 //myApp.controller('WelcomeController',["$scope", "$http", function($scope, $http){
 //    $scope.heading = "Message: ";

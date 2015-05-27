@@ -1,2 +1,19 @@
+<!-- http://goo.gl/2xj24Z -->
+
 <h1>Welcome home!</h1>
 <p>You are home</p>
+
+<section>
+    <form name="myform" novalidate ng-submit="onSubmit()">
+        <div>
+            <input type="email" name="email" placeholder="Enter your email" autofocus ng-model="user.email">
+            <p ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p>
+        </div>
+
+        <div>
+            <input type="password" name="password" placeholder="Enter your password"  ng-model="user.password">
+            <p ng-show="myform.password.$invalid && myform.password.$touched">Password is required</p>
+        </div>
+        <button type="submit" class="btn" ng-disabled="myform.$invalid">Login</button>
+    </form>
+</section>

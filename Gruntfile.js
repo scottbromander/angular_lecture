@@ -9,6 +9,10 @@ module.exports = function(grunt) {
             build: {
                 src: 'client//scripts/app.js',
                 dest: 'public/javascripts/app.min.js'
+            },
+            build: {
+                src: 'client/scripts/controllers/registration.js',
+                dest: 'public/javascripts/controllers/registration.min.js'
             }
         },
         copy: {
