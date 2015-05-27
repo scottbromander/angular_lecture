@@ -6,9 +6,21 @@
     </head>
 
     <body>
-        <div ng-include="'/views/userinfo.html'"></div>
+        <div class="col-md-offset-2">
+            <ul class="nav nav-pills">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+
+
+        <main ng-view></main>
+
+        <!--<div ng-include="'/views/userinfo.html'"></div>-->
 
         <script type="text/javascript" src="/vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/vendor/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="/javascripts/app.min.js"></script>
     </body>
 </html>

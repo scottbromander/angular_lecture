@@ -8,7 +8,7 @@
         <button ng-click="goodByeMessage()" class="btn btn-info">Goodbye</button>
         <button ng-click="grabinfo()"       class="btn btn-info">Get Info</button>
 
-        <div ng-repeat="someone in persons | limitTo: 3">
+        <div ng-repeat="someone in persons">
             <h3>{{someone.name}}</h3>
             <p>{{someone.money | currency}}</p>
         </div>
